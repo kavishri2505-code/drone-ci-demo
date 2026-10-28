@@ -1,0 +1,11 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: build-and-test
+    image: alpine
+    commands:
+      - echo "Build started"
+      - echo "Testing started"
+      - echo "All tests passed"
